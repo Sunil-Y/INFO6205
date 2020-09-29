@@ -133,6 +133,7 @@ public class BSTSimple<Key extends Comparable<Key>, Value> implements BstDetail<
 
     private Node delete(Node x, Key key) {
         // TO BE IMPLEMENTED
+        return null; // To be modified, important for running project
     }
 
     private Node deleteMin(Node x) {
