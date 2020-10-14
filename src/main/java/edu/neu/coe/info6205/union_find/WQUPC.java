@@ -54,6 +54,7 @@ public class WQUPC {
     public int find(int p) {
         validate(p);
         int root = p;
+        /*
         while (root != parent[root]) {
             root = parent[root];
         }
@@ -61,6 +62,11 @@ public class WQUPC {
             int newp = parent[p];
             parent[p] = root;
             p = newp;
+        }
+        */
+        while(root != parent[root]){
+            parent[root] = parent[parent[root]];
+            root = parent[root];
         }
         return root;
     }
